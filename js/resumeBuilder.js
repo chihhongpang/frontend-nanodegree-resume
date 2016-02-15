@@ -24,3 +24,17 @@ var bio = { "name": name,
 			"skills" : skills
 };
 $("#main").prepend(bio.welcomeMsg);
+
+var work = {};
+work.position = "Software Developer";
+work.employer = "IBM";
+work.year = "1";
+work.city = "Markham, ON";
+
+var education = {};
+education["name"] = "Queen's University";
+education["year"] = "6";
+education["city"] = "Kingston, ON";
+
+$("#main").append(work["position"]);
+$("#main").append(education.name);
